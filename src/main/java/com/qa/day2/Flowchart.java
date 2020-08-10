@@ -1,15 +1,14 @@
 package com.qa.day2;
 
 public class Flowchart {
-    public static int check = 0;
 
     public static void main(String[] args) {
         System.out.println(myMethod(1,2, true));
         System.out.println(myMethod(3,3, false));
         System.out.println(myMethod(1,1, true));
         System.out.println();
-        check = 520;
-        myFlow();
+
+        myFlow(520);
     }
 
     public static int myMethod(int a, int b, Boolean myBoolean){
@@ -21,7 +20,7 @@ public class Flowchart {
         }
     }
 
-    public static void myFlow(){
+    public static void myFlow(int check){
         if (check > 2000){
             System.out.println("A");
             if (check > 6000){
