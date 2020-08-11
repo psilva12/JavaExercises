@@ -14,21 +14,25 @@ public class UniqueSum {
     public static int uniqueSum(int a, int b, int c){
 
         if ( a == b){
-            return c;
+            if (a == c){
+                return 0;
+            }
+            else{
+                return c;
+            }
         }
-        else if ( a == c){
-            return b;
-        }
-        else if (b == c) {
-            return a;
-        }
-        else if ((a == c) && (a == b)) {
-            return 0;
+        else if (a == c || b == c){
+            if ( a == c) {
+                return b;
+            }
+            else if (b == c){
+                return a;
+            }
         }
         else {
             return a + b + c;
         }
-
+       return 0;
     }
 
 }
