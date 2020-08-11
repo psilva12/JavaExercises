@@ -6,8 +6,10 @@ public class Taxes {
     public static int income = 0;
 
     public static void main(String[] args) {
-        getTax(16000);
+        income = 36000;
+        getTax(income);
         System.out.println("Tax: " + tax);
+        System.out.println("Your total tax on: £" + income + " is £" + getTotal(tax, income));
     }
 
     public static void getTax (int income){
@@ -30,6 +32,10 @@ public class Taxes {
         else{
             tax = 10;
         }
-
     }
+
+    public static int getTotal(int tax, int income){
+        return income * tax / 100;
+    }
+
 }
