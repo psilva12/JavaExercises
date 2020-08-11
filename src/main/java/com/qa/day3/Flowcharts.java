@@ -5,8 +5,8 @@ public class Flowcharts {
 
 
     public static void main(String[] args) {
-        method1();
-        method2();
+        // replace the "methodx" by the method to be called
+        method3();
     }
 
     public static void method1(){
@@ -27,7 +27,15 @@ public class Flowcharts {
                 System.out.println("*");
             }
         }
+    }
 
+    public static void method3(){
+
+        for(int i = 1; i <=10 ; i++){
+           for( int e = 1; e <= 10; e++){
+               System.out.println(e);
+           }
+        }
     }
 
 }
