@@ -4,7 +4,6 @@ public class Doggo {
         method1(12);
     }
     public static void method1(int position){
-        int counter = 1;
         for(int i=1; i<=100; i++) {
             if (position == i) {
                 continue;
