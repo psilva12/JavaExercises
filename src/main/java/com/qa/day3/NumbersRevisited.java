@@ -7,7 +7,7 @@ public class NumbersRevisited {
 
         printLoop();
     }
-
+    // counts from 1 to 100 writtig the number down
     public static void printLoop() {
 
         for (int i = 1; i <= 100; i++) {
