@@ -1,5 +1,6 @@
 package com.qa.day3;
 
+
 public class Coins {
 
     public static int twentyPounds = 0;
@@ -35,7 +36,8 @@ public class Coins {
     public static void returnAmount(double a, double b){
         double change = b;
         change = b - a;
-        while(change >= 0.01){
+        while(change != 0){
+            change = Math.round(change * 100.0) / 100.0;
             System.out.println(change);
             if (change - 10 >= 0){
                 tenPounds = tenPounds+ 1;
