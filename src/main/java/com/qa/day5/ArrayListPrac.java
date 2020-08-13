@@ -7,6 +7,8 @@ import java.util.Collections;
 public class ArrayListPrac {
 
     public static List<String> myList = new ArrayList<>();
+    public static List<String> myList2 = new ArrayList<>();
+
 
 
     public static void main(String[] args) {
@@ -37,6 +39,14 @@ public class ArrayListPrac {
 
         //Sorts the array in alphabetical order
         Collections.sort(myList);
+        System.out.println(myList);
+
+        //Reverses the order of the List
+        Collections.reverse(myList);
+        System.out.println(myList);
+
+        //Swaps two elements
+        Collections.swap(myList, 1, 3);
         System.out.println(myList);
 
 
