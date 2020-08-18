@@ -3,11 +3,9 @@ package com.qa.day6;
 import java.util.*;
 
 public class MorseCode {
-
     List<String> alphabet = new ArrayList<String>(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
             "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"));
     List<String> morseAlphabet = new ArrayList<String>(Arrays.asList(".-","-...","-.-.", "-..", ".", "..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."));
-
 
     public static void main(String[] args) {
         MorseCode morse = new MorseCode();
