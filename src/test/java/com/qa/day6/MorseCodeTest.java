@@ -6,15 +6,16 @@ import static org.junit.Assert.assertEquals;
 
 public class MorseCodeTest {
 
-    static MorseCode morseCode;
+    MorseCode morseCode;
 
     @BeforeClass
     public static void initialise(){
-        MorseCode morseCode = new MorseCode();
+
     }
 
     @Test
     public void method1(){
+        MorseCode morseCode = new MorseCode();
         assertEquals(morseCode.method1("Hello World"),"......-...-..---/.-----.-..-..-..");
 
     }

@@ -4,15 +4,16 @@ import java.util.*;
 
 public class MorseCode {
 
-    List<String> alphabet = new ArrayList<String>(Arrays.asList("b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+    List<String> alphabet = new ArrayList<String>(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
             "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"));
     List<String> morseAlphabet = new ArrayList<String>(Arrays.asList(".-","-...","-.-.", "-..", ".", "..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."));
 
 
     public static void main(String[] args) {
+        MorseCode morse = new MorseCode();
 
-        System.out.println(method1("Hello World"));
-        System.out.println(method2(".../---/..."));
+        System.out.println(morse.method1("Hello World"));
+        System.out.println(morse.method2(".../---/..."));
     }
 
     public String method1(String morse){
