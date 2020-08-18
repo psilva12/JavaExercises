@@ -17,7 +17,7 @@ public class Cipher {
         System.out.println(cipher);
         method1("gsrh rh zm vcznkov lu gsv zgyzhs xrksvi ");
     }
-    public static void method1(String letter){
+    public static String method1(String letter){
         String[] array = letter.split("",0);
         String test ="";
         for (String value : array) {
@@ -31,5 +31,6 @@ public class Cipher {
             }
         }
         System.out.println(test);
+        return test;
     };
 }

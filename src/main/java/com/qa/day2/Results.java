@@ -14,26 +14,27 @@ public class Results {
         physics = 150;
         chemistry = 150;
         biology = 150;
-        moduleResults();
+        moduleResults(physics, chemistry, biology);
         passMark();
     }
 
-    public static void moduleResults(){
+    public static int moduleResults(int phyMark, int cheMark, int bioMark){
         System.out.println("Results: ");
-        System.out.println("Physics: " + physics);
-        System.out.println("Chemistry: " + chemistry);
-        System.out.println("Biology: " + biology);
-        if (biology < 60){
+        System.out.println("Physics: " + phyMark);
+        System.out.println("Chemistry: " + cheMark);
+        System.out.println("Biology: " + bioMark);
+        if (bioMark < 60){
             failed = failed + 1;
         }
-        if (chemistry < 60){
+        if (cheMark < 60){
             failed = failed + 1;
         }
-        if (physics < 60){
+        if (phyMark < 60){
             failed = failed + 1;
         }
-        total = physics + chemistry + biology;
+        total = phyMark + cheMark + bioMark;
         System.out.println("Total: " + total);
+        return total;
     }
 
     public static void passMark(){
