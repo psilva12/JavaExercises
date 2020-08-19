@@ -21,7 +21,7 @@ public class PersonWriteToFile {
     }
 
     public void populate(){
-
+        System.out.println();
         person1.setter("Michale", 25, "Security Guard");
 
         person2.setter("Ellie", 22, "Film Maker");
@@ -30,7 +30,7 @@ public class PersonWriteToFile {
     }
 
     public void listPop(){
-
+        System.out.println();
         List<String> mine = Arrays.asList(person1.getter(),person2.getter(), person3.getter());
             mine.stream()
                .forEach(s -> System.out.println(s));
@@ -38,11 +38,12 @@ public class PersonWriteToFile {
     }
 
     public void search(String name){
-        List<String> mine = Arrays.asList(person1.getName(),person2.getName(), person3.getName());
+        System.out.println();
+        List<String> mine = Arrays.asList(person1.getter(),person2.getter(), person3.getter());
         System.out.println(mine);
         String searchPerson =
                 mine.stream()
-                    .filter(str -> str.toUpperCase().equals(name.toUpperCase()))
+                    .filter(str -> str.toUpperCase().startsWith(name.toUpperCase()))
                     .collect(Collectors.joining());
         System.out.println(searchPerson);
     }
